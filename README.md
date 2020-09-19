@@ -1,5 +1,4 @@
 # Understanding Player's Preferences Using Reddit Data
-----
 
 ## Content 
 - [Problem Statement](#Problem-Statement)
@@ -10,8 +9,6 @@
 - [EDA and Sentiment Analysis](#EDA-and-Sentiment-Analysis)
 - [Modeling](#Modeling)
 - [References](#References)
-
----
 
 ## Problem Statement
 
