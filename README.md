@@ -1,6 +1,7 @@
-# Understanding Player's Preferences Using Reddit Data
+## Understanding Player's Preferences Using Reddit Data
+---
 
-## Content 
+### Content 
 - [Problem Statement](#Problem-Statement)
 - [Executive Summary](#Executive-Summary)
 - [Project Files](#Project-Files)
@@ -10,19 +11,21 @@
 - [Modeling](#Modeling)
 - [References](#References)
 
-## Problem Statement
+---
+
+### Problem Statement
 
 In the gaming community, there is a great divide between Playstation and Xbox users. One camp boast their robust online community, while the other their exclusive games. Well, imagine being a CEO for an indie company. You have this bright idea for a videogame but do not have enough budget to release it on both platforms. With a typical game costing roughly $40-60 million to make, errors can be financially damaging where game releases are like a gamble. There isn't a guarantee of success. However, a way to resolve this dilemma is to utilize prior knowledge of gamer behavior and preferences. By strategically releasing a game to a platform whose gamer's demographics are more in-line with the game premise, the chances for success are higher, while minimizing cost. Therefore, I conducted an analysis using Xbox One and PS4 subreddits to study gamer's preferences. Using this analysis, I provided recommendations to help indie gaming developers plan their marketing and game development phases. 
 
 ---
 
-## Executive Summary
+### Executive Summary
 
 Using the Playstation 4 (PS4) and Xbox One subreddits, I performed a Natural Language Processing in conjunction with a Logistics Regression to capture popular trends observed from each subreddits. Results observed were then utilized to provide indie game developers suggestions that will help strategize the marketing and development phase of their game.
 
 ---
 
-## Project Files
+### Project Files
 
 - README.md
 - Project 3_PS4 and Xbox One Analysis.pdf
@@ -35,7 +38,7 @@ Using the Playstation 4 (PS4) and Xbox One subreddits, I performed a Natural Lan
     
 ---
 
-## Directory
+### Directory
 
 |Feature|Type|Description|
 |---|---|---|
@@ -45,7 +48,7 @@ Using the Playstation 4 (PS4) and Xbox One subreddits, I performed a Natural Lan
 
 ---
 
-## Data Collection and Cleaning
+### Data Collection and Cleaning
 
 Using the Pushshift API, I collected 20,000 posts from Reddit (10,000 from Xbox One and 10,000 from PS4 subreddits). Due to regulation update of the API, there is a limit of 100 posts per request. Therefore, I embedded a while loop in the data collection function (`get_data`) to get the desired amount. To ensure each request is composed of a new set of posts, I used the oldest/minimum created_utc (decimal equivalent of date) of each pull as the argument for the `.get` method's before parameter. Additionally, I throttled each request for 3 seconds to be polite and comply with rate-limiting policies. Lastly, I added print statements in the function to track the collection status. 
 
@@ -53,7 +56,7 @@ To ensure each posts are from actual users, I check for promotional posts throug
 
 ---
 
-## EDA and Sentiment Analysis
+### EDA and Sentiment Analysis
 
 The EDA section is broken down into three categories: Word Count, Top Words, and Sentiment Analysis. For project cohesiveness, orange plots are for the PS subreddit (r/PS4), and blues are for the Xbox (r/xboxone). Lastly, all functions used in this project are in the function.py script.
 
@@ -75,7 +78,7 @@ I conducted a sentiment analysis to capture the attitudes of each subreddit user
 
 ---
 
-## Modeling
+### Modeling
 
 I tested three models to classify Reddit posts: Multinomial Naive Hayes, Random Forest Tree, and Logistic Regression. I selected those models because they are white-boxed models with attributes that make their coefficient or Gini impurity interpretable. I defined a successful model as one that beats the baseline score (50%). All models performed similarly to each other, with accuracy scores around 72-74%. Additionally, their sensitivity scores are around 70-75%, and specificity scores are between 71-76%. Since I am most comfortable interpreting Logistic Regression models, I decided to use its coefficient to isolate game titles. 
 
@@ -85,7 +88,7 @@ For the Xbox subreddit, the titles that stood out are Forza, Halo, Fable, Gears 
 
 ---
 
-## Recommendations
+### Recommendations
 
 My final advice to indie game developers is that exclusivity is a priority. Regardless of console, gamers appear to prefer games exclusive to their chosen platform. Suppose your game has either a good narrative that focuses on character growth or is in the action-adventure genre. In that case, it is better to release it for the Playstation. Horror games will also do well in this console. However, suppose the game is developed with intentions of creating a fun online environment for players. In that case, Xbox is a better console to release it in, especially for shooters and racing games. The suggestions above can be used as guidelines when planning marketing strategies.
 
@@ -93,7 +96,7 @@ This project is not definitive and still has many potentials for improvement. Fi
 
 ---
 
-## References
+### References
 
 - https://kotaku.com/how-much-does-it-cost-to-make-a-big-video-game-1501413649
 - https://metro.co.uk/2019/12/05/games-inbox-the-cost-of-making-a-video-game-campo-santo-break-up-and-mario-kart-for-kids-11273380/
