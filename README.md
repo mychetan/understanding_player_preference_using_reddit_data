@@ -91,7 +91,9 @@ For the Xbox subreddit, the titles that stood out are Forza, Halo, Fable, Gears 
 
 ### Recommendations
 
-The answer to the question of "Which console is better?" is **neither**. Console preference heavily depends on the type of game a player enjoys. However, a commonality is that exclusivity matters regardless of console. Gamers value exclusive games, and it is apparent in the sales. Additionally, console branding is crucial in the type of gamers they attract. So, for Playstation, first-player action-adventure games, such as TLOU and God of war, do well in their market. A big part of this is that PlayStation has created an image of being the best in portraying storytelling in their games. In comparison, Xbox games such as Forza and Gears of War have cemented their identity as an excellent console for serious competitive gaming. 
+The answer to the question of "Which console is better?" is **NEITHER**. 
+
+Console preference heavily depends on the type of game a player enjoys. However, a commonality is that exclusivity matters regardless of console. Gamers value exclusive games, and it is apparent in the sales. Additionally, console branding is crucial in the type of gamers they attract. So, for Playstation, first-player action-adventure games, such as TLOU and God of war, do well in their market. A big part of this is that PlayStation has created an image of being the best in portraying storytelling in their games. In comparison, Xbox games such as Forza and Gears of War have cemented their identity as an excellent console for serious competitive gaming. 
 
 The overall purpose of my recommendations above is to help game developers/researchers identify which console branding closely mimics their game. Thus, assisting the determination of which market the game will perform better. The motive behind this is that it takes a decent amount of time and effort to port code from one console to another due to technical specifications and differences. By identifying your market ahead of time, save resources and funding in the long term. 
 
