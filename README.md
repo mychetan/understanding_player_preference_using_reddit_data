@@ -1,7 +1,7 @@
-# Understanding Player's Preferences Using Reddit Data
-----
+## Understanding Player's Preferences Using Reddit Data
+---
 
-## Content 
+### Content 
 - [Problem Statement](#Problem-Statement)
 - [Executive Summary](#Executive-Summary)
 - [Project Files](#Project-Files)
@@ -13,7 +13,7 @@
 
 ---
 
-## Problem Statement
+### Problem Statement
 
 Playstation vs. Xbox, which one is better? It is a question that has plagued the gaming community. On one camp boasts its robust online community, while the other for its compelling storytelling. As an individual with friends in both spectrums, I have heard various reasons for this debate. They can range from "lack of interest in exclusive games" to "the overall software performance." In both cases, you can make an argument in favor of both consoles. However, there is still this unanswered question of what makes one console special over the other? And how does this affect the type of gamers they attract? 
 
@@ -21,13 +21,13 @@ For this project, I decided to conduct an analysis using the Xbox and Playstatio
 
 ---
 
-## Executive Summary
+### Executive Summary
 
 Reddit posts are collected using the pushshift API, focusing on the Playstation 4 (r/ps4) and Xbox One (r/xboxone) subreddit. I then trained an NLP Logistic Regression model to predict a post's subreddit community. Using its coefficient, I extract unique game titles to conduct a comparative analysis with 2020's top-selling games. My findings is that exclusivity and company branding play a critical role in a console player demographics. 
 
 ---
 
-## Project Files
+### Project Files
 
 - README.md
 - **Code Directory**
@@ -39,7 +39,7 @@ Reddit posts are collected using the pushshift API, focusing on the Playstation 
     
 ---
 
-## Directory
+### Directory
 
 |Feature|Type|Description|
 |---|---|---|
@@ -49,7 +49,7 @@ Reddit posts are collected using the pushshift API, focusing on the Playstation 
 
 ---
 
-## Data Collection and Cleaning
+### Data Collection and Cleaning
 
 To answer the problem statement, I decided to collect data from the r/ps4 and r/xboxone subreddit. Since neither of the new generation consoles are out during this project's completion, focusing on those two subreddits will paint a better picture of the community's activities. Additionally, discussions for both current and new generation consoles are still happening in those threads. 
 
@@ -57,7 +57,7 @@ Using the Pushshift API, I collected 10,000 posts from each subreddit, totaling 
 
 ---
 
-## EDA and Sentiment Analysis
+### EDA and Sentiment Analysis
 
 The EDA section is broken down into three categories: Word Count, Top Words, and Sentiment Analysis. For project cohesiveness, orange plots are for the PS subreddit (r/ps4), and blues are for the Xbox (r/xboxone).
 
@@ -79,7 +79,7 @@ I conducted a sentiment analysis to capture the attitudes of each subreddit user
 
 ---
 
-## Modeling
+### Modeling
 
 I tested three models to classify Reddit posts: Multinomial Naive Bayes, Random Forest Tree, and Logistic Regression. I selected those models because they are interpretable. The baseline score for this project is 50%. All models performed similarly to each other, with accuracy scores around 72-74%. Additionally, their sensitivity scores are around 70-75%, and specificity scores between 71-76%. Since I am most comfortable interpreting Logistic Regression models, I decided to use its coefficient to isolate game titles. 
 
@@ -89,7 +89,7 @@ For the Xbox subreddit, the titles that stood out are Forza, Halo, Fable, Gears 
 
 ---
 
-## Recommendations
+### Recommendations
 
 The answer to the question of "Which console is better?" is **neither**. Console preference heavily depends on the type of game a player enjoys. However, a commonality is that exclusivity matters regardless of console. Gamers value exclusive games, and it is apparent in the sales. Additionally, console branding is crucial in the type of gamers they attract. So, for Playstation, first-player action-adventure games, such as TLOU and God of war, do well in their market. A big part of this is that PlayStation has created an image of being the best in portraying storytelling in their games. In comparison, Xbox games such as Forza and Gears of War have cemented their identity as an excellent console for serious competitive gaming. 
 
@@ -99,7 +99,7 @@ This project is not definitive and still has many potentials for improvement. Fi
 
 ---
 
-## References
+### References
 
 - https://kotaku.com/how-much-does-it-cost-to-make-a-big-video-game-1501413649
 - https://metro.co.uk/2019/12/05/games-inbox-the-cost-of-making-a-video-game-campo-santo-break-up-and-mario-kart-for-kids-11273380/
